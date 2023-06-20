@@ -293,6 +293,13 @@ def test(test_set, teacher, student, autoencoder, teacher_mean, teacher_std,
             file = os.path.join(test_output_dir, defect_class, img_nm + '.tiff')
             tifffile.imwrite(file, map_combined)
 
+            ############################################################################################
+            # grabar foto resultante con localizacion de anomalia.
+            filepng = os.path.join(test_output_dir, defect_class, img_nm + '.png')
+            pngfile.imwrite(filepng, map_combined)
+            ############################################################################################
+        
+
         y_true_image = 0 if defect_class == 'good' else 1
         y_score_image = np.max(map_combined)
         y_true.append(y_true_image)
