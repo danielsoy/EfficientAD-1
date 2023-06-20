@@ -91,6 +91,7 @@ def main():
         os.path.join(dataset_path, config.subdataset, 'train'),
         transform=transforms.Lambda(train_transform))
     
+    # en mi PC encuentra bottle ubicada en un simil de colab content drive path
     full_train_set = "C:\\Users\libro\EfficientAD Accurate Visual Anomaly Detection at Millisecond-Level Latencies\EfficientAD\content\drive\MyDrive\mvtec_anomaly_detection"
 
     test_set = ImageFolderWithPath(
