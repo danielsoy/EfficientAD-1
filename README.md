@@ -69,6 +69,8 @@ wget https://www.mydrive.ch/shares/60736/698155e0e6d0467c4ff6203b16a31dc9/downlo
 tar -xvf mvtec_ad_evaluation.tar.xz
 rm mvtec_ad_evaluation.tar.xz
 ```
+## correr asi desde colab con dataset en drive mio>
+#  > !python efficientad.py -a /content/drive/MyDrive/mvtec_anomaly_detection  --subdataset bottle
 
 ## efficientad.py
 
