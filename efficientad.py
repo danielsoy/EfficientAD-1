@@ -32,7 +32,7 @@ def get_argparse():
                              'download ImageNet and set to ImageNet path')
     parser.add_argument('-a', '--mvtec_ad_path',
                         
-                        default='/content/drive/MyDrive/bottle',
+                        default='/content/drive/MyDrive/mvtec_anomaly_detection/bottle',
                        
                         help='Downloaded Mvtec AD dataset')
     parser.add_argument('-b', '--mvtec_loco_path',
